@@ -24,15 +24,31 @@ Just change the nrOfDivs to the amount of divs you need :)
 
 */
 
+/*
 $(document).ready(function() {
   var $div = $("<div>", {"class": "divGrids"});
-  $div.click(function(){ /* ... */ });
+  $div.click(function(){ });
   $("#main-container").append($div);
 
 var numberOfDivs = 15
 for (i=0;i<numberOfDivs;i++) {
   $('#main-container').append('<div class="divGrids"></div>');
 };
+*/
+
+/*
+Found this option here for the grid:
+https://stackoverflow.com/questions/31793518/trying-to-create-a-16x16-grid-of-divs-using-jquery-but-divs-keep-overlapping
+*/
+
+$(document).ready(function() {
+    for(var x = 0; x < 16; x++) {
+        for(var y = 0; y < 16; y++) {
+            var unit = $("<div class='divGrids'></div>");
+            unit.appendTo('#main-container');
+        }
+    }
+
 
 $('#main-container').on('mouseenter', '.divGrids', function() {
   $(this).addClass('hoverOn');
@@ -41,6 +57,18 @@ $('#main-container').on('mouseenter', '.divGrids', function() {
 $('#main-container').on('mouseleave', '.divGrids', function() {
   $(this).removeClass('hoverOn');
 });
+
+$(document).ready(function(){
+    $('#MyButton').click(function(){
+      const gridCount = prompt ("How many squares wide and tall would you like your new grid to be?");
+
+    });
+});
+
+
+
+
+
 
 
 
