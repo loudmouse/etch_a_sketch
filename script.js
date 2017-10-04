@@ -41,6 +41,11 @@ Found this option here for the grid:
 https://stackoverflow.com/questions/31793518/trying-to-create-a-16x16-grid-of-divs-using-jquery-but-divs-keep-overlapping
 */
 
+$(document).ready(function(){
+  $('#MyButton').click(function(){
+    const grid = +prompt ("How many squares wide and tall would you like your new grid to be?", "16");
+});
+
 $(document).ready(function() {
     for(var x = 0; x < 16; x++) {
         for(var y = 0; y < 16; y++) {
@@ -54,15 +59,6 @@ $('#main-container').on('mouseenter', '.divGrids', function() {
   $(this).addClass('hoverOn');
 });
 
-$('#main-container').on('mouseleave', '.divGrids', function() {
-  $(this).removeClass('hoverOn');
-});
-
-$(document).ready(function(){
-    $('#MyButton').click(function(){
-      const gridCount = prompt ("How many squares wide and tall would you like your new grid to be?");
-
-    });
 });
 
 

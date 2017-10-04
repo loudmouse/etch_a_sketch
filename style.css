@@ -1,3 +1,8 @@
+#main{
+  height: 960px;
+  width: 960px;
+  margin: 0 auto;
+}
 #main-container {
   height: 960px;
   width: 960px;
