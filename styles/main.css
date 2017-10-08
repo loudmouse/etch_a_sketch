@@ -14,6 +14,10 @@ body{
 
 h1{
   text-align: center;
+  color: #ecb030;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3em;
+  margin-top:0px;
 }
 
 .button{
@@ -45,4 +49,33 @@ h1{
 .hover-square{
   background-color: #000000;
   opacity: 1;
+}
+
+.dials{
+  width: 760px;
+  margin: 0 auto;
+}
+
+.left-dial{
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  display: inline-block;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom:50px;
+}
+
+.right-dial{
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  display: inline-block;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom:50px;
 }
